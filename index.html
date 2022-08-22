@@ -17,8 +17,10 @@
     <!-- header section -->
     <header>
         <div class="bg-black w-100 h-80">
-            <h1 class="text-5xl text-amber-500 text-center font-semibold pt-16">Pick your favorite five players</h1>
-            <p class="text-white text-center mt-8">The ability to control a football,or 'touch', is the <br> most
+            <h1 class="text-5xl text-amber-500 text-center font-semibold italic pt-16">Pick your favorite five players
+            </h1>
+            <img class="mx-auto" src="/images/Line Marker.png" alt="">
+            <p class="italic text-white text-center mt-8">The ability to control a football,or 'touch', is the <br> most
                 important
                 skill for a striker to possess.</p>
         </div>
@@ -107,6 +109,7 @@
                     <div class="  bg-black w-100 h-80 ">
                         <h3 class=" text-center text-white"> Add Your favorite- <span id="total-added-player"
                                 class="text-amber-500">0</span> </h3>
+                        <img class="ml-20 mb-2" src="/images/Ureg-Ureg Marker.png" alt="">
                         <div class="overflow-x-auto">
                             <table class="table w-full ">
                                 <!-- head -->
@@ -115,7 +118,6 @@
                                     </tr>
                                 </thead>
                                 <tbody class="bg-black" id="player-name">
-
                                 </tbody>
                             </table>
                         </div>
@@ -124,17 +126,18 @@
                     <!-- calculate budget part -->
                     <div class="  text-white bg-black w-100  my-4">
                         <h3 class="text-center">Budget</h3>
-                        <p class="ml-2"> Per player: <input class="w-1/2 bg-zinc-400  " type="text" name=""
-                                id="player-cost"></p>
-                        <button id="btn-calculate" class="btn btn-primary my-3 justify-center ml-12">Calculate</button>
+                        <img class="ml-20" src="/images/Ureg-Ureg Marker.png" alt="">
+                        <p class="ml-2 mt-2"> Per player: <input class="w-1/2 bg-zinc-400 hover:bg-zinc-600 rounded "
+                                type="text" name="" id="player-cost"></p>
+                        <button id="btn-calculate" class="btn btn-primary my-3 justify-center ml-28">Calculate</button>
                         <p>Player Expenses: $<span id="player-expenses">0</span></p>
-                        <p class="m-2 "> Manager: <input class="w-1/2 bg-zinc-400  " type="text" name=""
-                                id="manager-cost"></p>
-                        <p class="ml-2"> Coach: <input class="w-1/2 bg-zinc-400 ml-4 " type="text" name=""
-                                id="coach-cost"></p>
-                        <button id="calculate-total" class="btn btn-primary my-3 justify-center ml-12">Calculate
+                        <p class="m-2 "> Manager: <input class="w-1/2 bg-zinc-400 hover:bg-zinc-600 rounded "
+                                type="text" name="" id="manager-cost"></p>
+                        <p class="ml-2"> Coach: <input class="w-1/2 bg-zinc-400 ml-4 hover:bg-zinc-600 rounded "
+                                type="text" name="" id="coach-cost"></p>
+                        <button id="calculate-total" class="btn btn-primary my-3 justify-center ml-20">Calculate
                             total</button>
-                        <p class="ml-12 mb-2">Total: <span class="ml-12">$</span><span id="final-total"
+                        <p class="ml-12  pb-6">Total : <span class="ml-12 ">$</span><span id="final-total"
                                 class="text-amber-500">0</span></p>
 
 

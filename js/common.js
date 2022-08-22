@@ -1,4 +1,4 @@
-//<<<<<... player added list upgrate..>>>>//
+//<<<<<... player added list upgrate function.>>>>//
 
 const playerArray = [];
 
@@ -11,7 +11,6 @@ function display(playerList) {
     addedPlayerList.innerHTML = '';
     for (let i = 0; i < playerList.length; i++) {
         const name = playerList[i];
-        // console.log(name)
         const tr = document.createElement('tr')
         tr.innerHTML = `
         <th>${i+1}</th>
@@ -30,18 +29,23 @@ function addToList(element) {
     document.getElementById('total-added-player').innerText = playerArray.length;
     display(playerArray);
 }
+
 //...<<<<common function for get Input Field value Using Id ......>>>//
+
 function getFieldValueById(InputId) {
     const fieldValue = parseInt(document.getElementById(InputId).value);
     return fieldValue;
 }
+
 //...<<<<common function for get Text Field  value Using Id ......>>>//
 
 function getTextElementValueById(InputId) {
     const elementTextValue = parseInt(document.getElementById(InputId).innerText);
     return elementTextValue;
 }
-//...<<<<common function for set Text Field  value Using Id ......>>>//
+
+//...<<<<common function for set Text Field  value Using Id ......>>>// 
+
 function setTextElementValue(inputid, result) {
     const elementValue = document.getElementById(inputid);
     elementValue.innerText = result;
