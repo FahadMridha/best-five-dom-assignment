@@ -9,7 +9,6 @@ function display(playerList) {
     }
     const addedPlayerList = document.getElementById('player-name');
     addedPlayerList.innerHTML = '';
-
     for (let i = 0; i < playerList.length; i++) {
         const name = playerList[i];
         // console.log(name)
@@ -22,17 +21,28 @@ function display(playerList) {
 }
 
 function addToList(element) {
-    // console.log(element.parentNode.parentNode.children[1].innerText)
-
     const playerName = element.parentNode.parentNode.children[1].innerText;
     playerArray.push(playerName);
-    // console.log(playerArray);
     if (playerArray.length > 5) {
-
         alert('you selecet Max five Players')
         return;
-
     }
     document.getElementById('total-added-player').innerText = playerArray.length;
     display(playerArray);
+}
+//...<<<<common function for get Input Field value Using Id ......>>>//
+function getFieldValueById(InputId) {
+    const fieldValue = parseInt(document.getElementById(InputId).value);
+    return fieldValue;
+}
+//...<<<<common function for get Text Field  value Using Id ......>>>//
+
+function getTextElementValueById(InputId) {
+    const elementTextValue = parseInt(document.getElementById(InputId).innerText);
+    return elementTextValue;
+}
+//...<<<<common function for set Text Field  value Using Id ......>>>//
+function setTextElementValue(inputid, result) {
+    const elementValue = document.getElementById(inputid);
+    elementValue.innerText = result;
 }
