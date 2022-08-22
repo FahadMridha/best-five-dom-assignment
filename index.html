@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pick your favorite five players</title>
+    <!-- Tailwindcss CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+
 </head>
-<body>
-    <h1>Pick your favorite five players</h1>
+
+<body class="bg-neutral-700">
+    <!-- header section -->
+    <header>
+        <div class="bg-black w-100 h-80">
+            <h1 class="text-5xl text-amber-500 text-center font-semibold">Pick your favorite five players</h1>
+            <p class="text-white text-center mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic libero
+                dolorum,<br> necessitatibus doloribus ab unde at debitis fuga, rerum quam tempora sint magni eos
+                recusandae placeat consequatur facilis accusantium.</p>
+        </div>
+    </header>
+    <main>
+        <!-- player section -->
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <!-- player information -->
+                <div class="col-span-2 ...">
+                    <div class="grid grid-cols-3 gap-4 mt-10">
+                        <div class=" w-full bg-black shadow-xl text-white">
+                            <figure>
+                                <img src="/images/CristianoRonaldo.jpg" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Cristiano Ronaldo</h2>
+                            <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
+                            <div class="card-action justify-center my-2">
+                                <button onclick="addToList(this)" class="btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+                        <div class=" w-full bg-black shadow-xl text-white">
+                            <figure>
+                                <img src="/images/marcelo.jpg" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Marcelo Vieira</h2>
+                            <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
+                            <div class="card-action justify-center mt-2">
+                                <button onclick="addToList()" class="btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+                        <div class=" w-full bg-black shadow-xl text-white">
+                            <figure>
+                                <img src="/images/mbappe.jpg" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Kylian Mbappe</h2>
+                            <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
+                            <div class="card-action justify-center mt-2">
+                                <button onclick="addToList()" class="btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+
+
+                        <div class=" w-full bg-black shadow-xl text-white">
+                            <figure>
+                                <img src="/images/Sergio-Ramos.jpg" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Sergio-Ramos</h2>
+                            <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
+                            <div class="card-action justify-center my-2">
+                                <button onclick="addToList()" class="btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+                        <div class=" w-full bg-black shadow-xl text-white">
+                            <figure>
+                                <img src="/images/Salah.jpg" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Mohamed Salah</h2>
+                            <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
+                            <div class="card-action justify-center my-2">
+                                <button onclick="addToList()" class="btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+                        <div class=" w-full bg-black shadow-xl text-white">
+                            <figure>
+                                <img src="/images/Suarez.jpg" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Luis Suárez</h2>
+                            <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
+                            <div class="card-action justify-center">
+                                <button onclick="addToList()" class=" btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <div class=" text-white bg-black w-100 h-60 ">
+                        <h3 class=" text-center">Selecet-V</h3>
+                        <div>
+                            <ul <span id="player-number">5</span> >
+                                <li>heh</li>
+                                <li>heh</li>
+                                <li>heh</li>
+                                <li>heh</li>
+                                <li>heh</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="  text-white bg-black w-100  my-4">
+                        <h3 class="text-center">Budget</h3>
+                        <p class="ml-2"> Per player: <input class="w-1/2 bg-zinc-400  " type="text" name=""
+                                id="player-cost"></p>
+                        <button id="btn-calculate" class="btn btn-primary my-3 justify-center ml-12">Calculate</button>
+                        <p>Player Expenses: $<span id="player-expenses">0</span></p>
+                        <p class="m-2 "> Manager: <input class="w-1/2 bg-zinc-400  " type="text" name=""
+                                id="manager-cost"></p>
+                        <p class="ml-2"> Coach: <input class="w-1/2 bg-zinc-400 ml-4 " type="text" name=""
+                                id="coach-cost"></p>
+                        <button id="calculate-total" class="btn btn-primary my-3 justify-center ml-12">Calculate
+                            total</button>
+                        <p class="ml-12 mb-2">Total: <span class="ml-12">$</span><span id="final-total">0</span></p>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="text-center text-white bg-black w-100 h-20">
+            <p>helo js</p>
+        </div>
+    </footer>
+    <script src="/js/common.js"></script>
+    <script src="/js/budget.js"></script>
 </body>
+
 </html>
