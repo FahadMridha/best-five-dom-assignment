@@ -2,7 +2,12 @@ const playerArray = [];
 
 function display(playerList) {
     const addedPlayerList = document.getElementById('player-name');
+    if (playerArray.length > 5) {
+        alert('you selecet Max five Players')
+        return;
+    }
     addedPlayerList.innerHTML = '';
+
     for (let i = 0; i < playerList.length; i++) {
         const name = playerList[i];
         // console.log(name)
@@ -10,12 +15,7 @@ function display(playerList) {
         tr.innerHTML = `
         <th>${i+1}</th>
         <td>${name}</td>`;
-        if (playerArray.length > 5) {
-            alert('you selecet Max five Players')
-            return;
-        }
         addedPlayerList.appendChild(tr);
-
     }
 }
 
