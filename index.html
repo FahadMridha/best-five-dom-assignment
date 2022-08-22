@@ -18,9 +18,9 @@
     <header>
         <div class="bg-black w-100 h-80">
             <h1 class="text-5xl text-amber-500 text-center font-semibold">Pick your favorite five players</h1>
-            <p class="text-white text-center mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic libero
-                dolorum,<br> necessitatibus doloribus ab unde at debitis fuga, rerum quam tempora sint magni eos
-                recusandae placeat consequatur facilis accusantium.</p>
+            <p class="text-white text-center mt-8">The ability to control a football,or 'touch', is the <br> most
+                important
+                skill for a striker to possess.</p>
         </div>
     </header>
     <main>
@@ -47,7 +47,7 @@
                             <h2 class="text-base mt-2 text-center">Marcelo Vieira</h2>
                             <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
                             <div class="card-action justify-center mt-2">
-                                <button onclick="addToList()" class="btn btn-primary">SELECET</button>
+                                <button onclick="addToList(this)" class="btn btn-primary">SELECET</button>
                             </div>
                         </div>
                         <div class=" w-full bg-black shadow-xl text-white">
@@ -57,7 +57,7 @@
                             <h2 class="text-base mt-2 text-center">Kylian Mbappe</h2>
                             <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
                             <div class="card-action justify-center mt-2">
-                                <button onclick="addToList()" class="btn btn-primary">SELECET</button>
+                                <button onclick="addToList(this)" class="btn btn-primary">SELECET</button>
                             </div>
                         </div>
 
@@ -69,7 +69,7 @@
                             <h2 class="text-base mt-2 text-center">Sergio-Ramos</h2>
                             <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
                             <div class="card-action justify-center my-2">
-                                <button onclick="addToList()" class="btn btn-primary">SELECET</button>
+                                <button onclick="addToList(this)" class="btn btn-primary">SELECET</button>
                             </div>
                         </div>
                         <div class=" w-full bg-black shadow-xl text-white">
@@ -79,7 +79,7 @@
                             <h2 class="text-base mt-2 text-center">Mohamed Salah</h2>
                             <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
                             <div class="card-action justify-center my-2">
-                                <button onclick="addToList()" class="btn btn-primary">SELECET</button>
+                                <button onclick="addToList(this)" class="btn btn-primary">SELECET</button>
                             </div>
                         </div>
                         <div class=" w-full bg-black shadow-xl text-white">
@@ -89,7 +89,7 @@
                             <h2 class="text-base mt-2 text-center">Luis Suárez</h2>
                             <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
                             <div class="card-action justify-center">
-                                <button onclick="addToList()" class=" btn btn-primary">SELECET</button>
+                                <button onclick="addToList(this)" class=" btn btn-primary">SELECET</button>
                             </div>
                         </div>
 
@@ -98,16 +98,20 @@
                     </div>
                 </div>
                 <div class="mt-10">
-                    <div class=" text-white bg-black w-100 h-60 ">
-                        <h3 class=" text-center">Selecet-V</h3>
-                        <div>
-                            <ul <span id="player-number">5</span> >
-                                <li>heh</li>
-                                <li>heh</li>
-                                <li>heh</li>
-                                <li>heh</li>
-                                <li>heh</li>
-                            </ul>
+                    <div class="  bg-black w-100 h-60 ">
+                        <h3 class=" text-center">Your favorite- <span id="total-added-player"
+                                class="text-amber-500">0</span> </h3>
+                        <div class="overflow-x-auto">
+                            <table class="table w-full">
+                                <!-- head -->
+                                <thead>
+                                    <tr>
+                                    </tr>
+                                </thead>
+                                <tbody id="player-name">
+
+                                </tbody>
+                            </table>
                         </div>
 
                     </div>

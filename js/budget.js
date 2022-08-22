@@ -14,8 +14,10 @@ function setTextElementValue(inputid, result) {
 }
 document.getElementById('btn-calculate').addEventListener('click', function () {
     const perPlayerCost = getFieldValueById('player-cost');
-    const playerNumber = getTextElementValueById('player-number');
-    const totalCost = perPlayerCost * 5;
+    // const playerNumber = getTextElementValueById('player-number');
+    const totalPlayer = playerArray.length
+    // console.log(totalPlayer);
+    const totalCost = perPlayerCost * totalPlayer;
     setTextElementValue('player-expenses', totalCost);
 })
 document.getElementById('calculate-total').addEventListener('click', function () {
