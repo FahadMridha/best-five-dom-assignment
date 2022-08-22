@@ -18,11 +18,11 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const playerExpenses = getTextElementValueById('player-expenses')
     const managerCost = getFieldValueById('manager-cost');
     const coachCost = getFieldValueById('coach-cost');
-    if (isNaN(playerExpenses) || isNaN(managerCost) || isNaN(coachCost)) {
+    if (isNaN(managerCost) || isNaN(coachCost)) {
         alert('Please provide valid number input.')
         return;
     }
-    if ((playerExpenses < 0) || (managerCost < 0) || (coachCost < 0)) {
+    if ((managerCost < 0) || (coachCost < 0)) {
         alert('Please provide positive number input.')
         return;
     }
