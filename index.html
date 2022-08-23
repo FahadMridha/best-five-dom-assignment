@@ -28,7 +28,7 @@
     <main>
         <!-- player section -->
         <section>
-            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto ">
                 <!-- player information -->
                 <div class="col-span-2 ...">
                     <div class="grid grid-cols-3 gap-4 mt-10">
@@ -104,7 +104,7 @@
                             <figure>
                                 <img src="/images/Thiago-silva.jpg" alt="Player" />
                             </figure>
-                            <h2 class="text-base mt-2 text-center">Thiago-silva</h2>
+                            <h2 class="text-base mt-2 text-center">Thiago Silva</h2>
                             <p class="my-2 text-center"><small>24 Goals</small> . <small>50 Assist</small></p>
                             <div class="card-action justify-center">
                                 <button onclick="addToList(this);this.disabled=true;"
@@ -141,8 +141,10 @@
                         <h3 class=" text-center text-white"> Add Your favorites- <span id="total-added-player"
                                 class="text-amber-500">0</span> </h3>
                         <img class="ml-20 mb-2" src="/images/Ureg-Ureg Marker.png" alt="">
-                        <div class="overflow-x-auto">
-                            <table class="table w-full ">
+
+                        <div class="overflow-x-auto ">
+                            <!-- table -->
+                            <table class="table w-full border-separate  border border-slate-400 ">
                                 <!-- head -->
                                 <thead>
                                     <tr>
@@ -155,7 +157,7 @@
 
                     </div>
                     <!-- calculate budget part -->
-                    <div class="  text-white bg-black w-100  my-4">
+                    <div class="  text-white bg-black w-100  mt-16">
                         <h3 class="text-center">Budget</h3>
                         <img class="ml-20" src="/images/Ureg-Ureg Marker.png" alt="">
                         <p class="ml-2 mt-2"> Per player: <input class="w-1/2 bg-zinc-400 hover:bg-zinc-600 rounded "

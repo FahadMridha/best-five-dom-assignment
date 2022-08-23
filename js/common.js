@@ -24,6 +24,7 @@ function addToList(element) {
     playerArray.push(playerName);
     if (playerArray.length > 5) {
         alert('you selecet Max five Players')
+        button.disabled = false;
         return;
     }
     document.getElementById('total-added-player').innerText = playerArray.length;
@@ -44,7 +45,7 @@ function getTextElementValueById(InputId) {
     return elementTextValue;
 }
 
-//...<<<<common function for set Text Field  value Using Id ......>>>// 
+//...<<<<common function for Set Text Field  value Using Id ......>>>// 
 
 function setTextElementValue(inputid, result) {
     const elementValue = document.getElementById(inputid);
